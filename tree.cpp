@@ -19,9 +19,35 @@ node* create(){
     newnode->right = create();
     return newnode;
 }
+void inorder(node* root){
+    if(root == 0)
+    return;
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+}
+void postorder(node* root){
+    if(root == 0)
+    return;
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<" ";
+}
+void preorder(node* root){
+    if(root == 0)
+    return;
+    cout<<root->data<<" ";
+    preorder(root->left);
+    preorder(root->right);
+}
 int main(){
     node* root = 0;
     root = create();
-
+    cout<<"Root is:"<<root<<endl;
+    preorder(root);
+    cout<<endl;
+    inorder(root);
+    cout<<endl;
+    postorder(root);
     return 0;
 }
