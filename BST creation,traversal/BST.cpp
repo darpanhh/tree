@@ -1,4 +1,4 @@
-//BST creation ,inorder traversal, //pre-order traversal and post-order //traversal
+//BST creation and traversal
 #include<iostream>
 using namespace std;
 struct Tree{
