@@ -58,7 +58,7 @@ void postorderTraversal(Tree* root) {
 }
 
 int main() {
-    // Insert given data directly
+   
     int values[] = {45, 12, 34, 33, 10, 20, 15, 67, 56, 70, 48, 26};
     int size = sizeof(values) / sizeof(values[0]);
     
@@ -66,7 +66,7 @@ int main() {
         createBST(values[i]);
     }
 
-    // Show traversals
+  
     cout << "Inorder Traversal: ";
     inorderTraversal(root);
     cout << "\n";
@@ -81,3 +81,4 @@ int main() {
 
     return 0;
 }
+
